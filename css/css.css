@@ -1,9 +1,9 @@
 html {
-    max-width: 80ch;
+    max-width: 70ch;
     padding: 3em 1em;
     margin: auto;
     line-height: 1.75;
-    font-size: 1.4em;
+    font-size: calc(1em + .5vw);
     font-family: monospace;
 }
 

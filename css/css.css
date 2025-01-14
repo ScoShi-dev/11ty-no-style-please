@@ -1,19 +1,19 @@
 html {
-    max-width: 70ch;
-    padding: 3em 1em;
-    margin: auto;
-    line-height: 1.75;
-    font-size: calc(1em + .5vw);
     font-family: monospace;
+    font-size: calc(1em + .5vw);
+    line-height: 1.5;
+    margin: auto;
+    max-width: 60ch;
+    padding: 3em 1em;
 }
 
-h1,h2,h3,h4,h5,h6 {
+:is(h1,h2,h3,h4,h5,h6) {
     margin: 2em 0 1em;
 }
   
-p,ul,ol {
-    margin-bottom: 1em;
+:is(p,ol,ul) {
     color: #1d1d1d;
+    margin-bottom: 1em;
 }
 
 .post-meta {
@@ -21,20 +21,19 @@ p,ul,ol {
 }
 
 img {
-    max-width: 100%;
-    margin: 0 auto;
     display: block;
+    margin: 0 auto;
+    max-width: 100%;
 }
 
 blockquote {
-    font-style: italic;
     border: thin solid black;
+    border-left:.25em solid black;
+    font-style: italic;
     padding: 1rem;
-}
-
-blockquote p {
+& p {
     margin: 0;
-}
+}}
 
 pre {
     overflow-x: auto;
